@@ -1,0 +1,59 @@
+/*=====ESTILO GERAL=====*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*para que fique tudo na mesma caixa*/
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #000;
+    height: 100vh;/*100% da altura da tela*/
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;/*centralizar na tela*/
+    
+}
+
+/*=====ESTILO DO CABEÇALHO===== */
+header{
+    padding: 40px 4%;/*40px em cima e em baixo e 4% nas laterais*/
+}
+
+header > .interface{
+    display: flex;/*para que os elementos fiquem um ao lado do outro*/
+    align-items: center;/*alinhar os elementos no centro*/
+    justify-content: space-between;/*para que os elementos fiquem um de cada lado*/
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;/*para tirar o sublinhado*/;    
+}
+
+header a:hover{
+    color: #3BF1F4;
+    transform: scale(1.05);
+}
+
+header nav ul{   
+    list-style: none;/*para tirar as bolinhas*/
+}
+
+header nav ul li{
+    display: inline-block;/*para que os elementos fiquem um ao lado do outro*/
+    padding: 0 40px;/*para que fique um espaço entre os elementos*/
+}
+
+header .btn-contato button{
+    background: #3BF1F4;
+    color: #000;
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
