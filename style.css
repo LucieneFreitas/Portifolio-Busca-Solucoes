@@ -1,3 +1,11 @@
+:root{
+    --body-background: #000;
+    --header: #fff;
+    --header-hover: #3BF1F4;
+    --button-background: #3BF1F4;
+    --button-shadow: #3bf1f465;
+}
+
 /*=====ESTILO GERAL=====*/
 *{
     margin: 0;
@@ -7,7 +15,7 @@
 }
 
 body{
-    background: #000;
+    background: var(--body-background);
     height: 100vh;/*100% da altura da tela*/
 }
 
@@ -29,12 +37,12 @@ header > .interface{
 }
 
 header a{
-    color: #fff;
+    color:var(--header);
     text-decoration: none;/*para tirar o sublinhado*/;    
 }
 
 header a:hover{
-    color: #3BF1F4;
+    color:var(--header-hover);
     transform: scale(1.05);
 }
 
@@ -48,8 +56,7 @@ header nav ul li{
 }
 
 header .btn-contato button{
-    background: #3BF1F4;
-    color: #000;
+    background: var(--button-background);    
     padding: 10px 40px;
     border-radius: 30px;
     border: none;
@@ -57,3 +64,4 @@ header .btn-contato button{
     font-size: 18px;
     font-weight: 600;
 }
+
