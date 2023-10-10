@@ -3,7 +3,7 @@
     --header: #fff;
     --header-hover: #3BF1F4;
     --button-background: #3BF1F4;
-    --button-shadow: #3bf1f465;
+    --button-shadow: #c6feff;
 }
 
 /*=====ESTILO GERAL=====*/
@@ -20,7 +20,7 @@ body{
 }
 
 .interface{
-    max-width: 1280px;
+    max-width: 1280px;/*largura máxima*/
     margin: 0 auto;/*centralizar na tela*/
     
 }
@@ -38,12 +38,14 @@ header > .interface{
 
 header a{
     color:var(--header);
-    text-decoration: none;/*para tirar o sublinhado*/;    
+    text-decoration: none;/*para tirar o sublinhado*/;
+    display: inline-block; /*para que o elemento fique na mesma linha*/  
+    transition: .2s;/*para que a transição seja suave*/
 }
 
 header a:hover{
     color:var(--header-hover);
-    transform: scale(1.05);
+    transform: scale(1.05);/*para aumentar o tamanho do elemento*/
 }
 
 header nav ul{   
@@ -63,5 +65,9 @@ header .btn-contato button{
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px var(--button-shadow);
 }
 
