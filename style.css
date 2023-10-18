@@ -29,6 +29,22 @@ body{
     display: flex;/*para que texto e imagem fiquem um ao lado do outro*/
 }
 
+.btn-contato button{
+    background: var(--button-background);    
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .2s;/*para que a transição seja suave*/
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px var(--button-shadow);
+    transform: scale(1.05);/*para aumentar o tamanho do elemento*/
+}
+
 /*=====ESTILO DO CABEÇALHO===== */
 header{
     padding: 40px 4%;/*40px em cima e em baixo e 4% nas laterais*/
@@ -61,19 +77,9 @@ header nav ul li{
     padding: 0 40px;/*para que fique um espaço entre os elementos*/
 }
 
- .btn-contato button{
-    background: var(--button-background);    
-    padding: 10px 40px;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 600;
-}
 
-header .btn-contato button:hover{
-    box-shadow: 0px 0px 8px var(--button-shadow);
-}
+
+
 
 
 
@@ -101,4 +107,24 @@ section.topo-do-site .flex{
 .topo-do-site .txt-top-site p{
     color: var(--font);
     margin: 40px 0;
+}
+
+
+/*aplicar animação*/
+.topo-do-site .img-top-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;/*2s tempo q levará para ser concluida; ease-in-out configurar a velocidade; infinite ficar funcionando infinito; alternate ficar alternando*/
+}
+
+/*===========ANIMAÇÃO DA IMAGEM===========*/
+@keyframes flutuar{
+    /*estado inicial*/
+    0%{
+        top: 0;
+    }
+
+    /*qdo animação estiver acabando*/
+    100%{
+        top: 30px;
+    }
 }
