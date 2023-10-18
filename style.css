@@ -4,6 +4,7 @@
     --header-hover: #3BF1F4;
     --button-background: #3BF1F4;
     --button-shadow: #c6feff;
+    --font: #fff;
 }
 
 /*=====ESTILO GERAL=====*/
@@ -21,8 +22,11 @@ body{
 
 .interface{
     max-width: 1280px;/*largura máxima*/
-    margin: 0 auto;/*centralizar na tela*/
-    
+    margin: 0 auto;/*centralizar na tela*/    
+}
+
+.flex{
+    display: flex;/*para que texto e imagem fiquem um ao lado do outro*/
 }
 
 /*=====ESTILO DO CABEÇALHO===== */
@@ -57,7 +61,7 @@ header nav ul li{
     padding: 0 40px;/*para que fique um espaço entre os elementos*/
 }
 
-header .btn-contato button{
+ .btn-contato button{
     background: var(--button-background);    
     padding: 10px 40px;
     border-radius: 30px;
@@ -71,3 +75,30 @@ header .btn-contato button:hover{
     box-shadow: 0px 0px 8px var(--button-shadow);
 }
 
+
+
+/*=====ESTILO DO TOPO DO SITE=====*/
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;/*alinhar os elementos no centro*/
+    justify-content: center;/*alinhar os elementos no centro*/
+    gap: 90px;/*espaço entre os elementos*/
+}
+
+.topo-do-site h1{
+   color: var(--font);
+   font-size: 42px;
+   line-height: 40px;/*espaçamento entre as linhas*/
+}
+
+.topo-do-site .txt-top-site h1 span{
+    color: var(--header-hover);    
+}
+
+.topo-do-site .txt-top-site p{
+    color: var(--font);
+    margin: 40px 0;
+}
